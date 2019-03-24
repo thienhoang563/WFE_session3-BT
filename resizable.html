@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Resizable - Default functionality</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <style>
+        #resizable { width: 150px; height: 150px; padding: 0.5em; }
+        #resizable h3 { text-align: center; margin: 0; }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#resizable" ).resizable();
+        } );
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.blade.html">jQuery</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">jQueryUI</a></li>
+            <li><a href="#">Bootstrap</a></li>
+            <li><a href="#">Angular</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <h2 class="text-center">jQuery Function</h2>
+        <div class="col-sm-4">
+            <div class="left-column">
+                <div class="list-group">
+
+                    <a href="dragable.html" class="list-group-item"><b>Draggable()</b></a>
+                    <a href="droppable.html" class="list-group-item"><b>Droppable()</b></a>
+                    <a href="resizable.html" class="list-group-item"><b>Resizable()</b></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-8 content">
+            <div id="resizable" class="ui-widget-content">
+                <h3 class="ui-widget-header">Resizable</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

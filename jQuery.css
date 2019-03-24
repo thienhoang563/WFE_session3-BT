@@ -1,0 +1,15 @@
+*{
+
+}
+
+.col-sm-8.content {
+    width: 66%;
+    height: 500px;
+    border: 3px solid #495049;
+}
+
+.left-column {
+    width: 100%;
+    float: left;
+    margin-left: 5px;
+}

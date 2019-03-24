@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Droppable - Default functionality</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <style>
+        #draggable { width: 100px; height: 100px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; }
+        #droppable { width: 200px; height: 200px; padding: 0.5em; float: left; margin: 10px; }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#draggable" ).draggable();
+            $( "#droppable" ).droppable({
+                drop: function( event, ui ) {
+                    $( this )
+                        .addClass( "ui-state-highlight" )
+                        .find( "p" )
+                        .html( "Dropped!" );
+                }
+            });
+        } );
+    </script>
+    <link rel="stylesheet" href="../../../public/css/jQuery.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">jQuery</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">jQueryUI</a></li>
+            <li><a href="#">Bootstrap</a></li>
+            <li><a href="#">Angular</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <h2 class="text-center">jQuery Function</h2>
+        <div class="col-sm-4">
+            <div class="left-column">
+                <div class="list-group">
+
+                    <a href="dragable.html" class="list-group-item"><b>Draggable()</b></a>
+                    <a href="droppable.html" class="list-group-item"><b>Droppable()</b></a>
+                    <a href="resizable.html" class="list-group-item"><b>Resizable()</b></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-8 content">
+            <div id="draggable" class="ui-widget-content">
+                <p>Drag me to my target</p>
+            </div>
+
+            <div id="droppable" class="ui-widget-header">
+                <p>Drop here</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

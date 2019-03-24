@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Selectable - Default functionality</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <style>
+        #feedback { font-size: 1.4em; }
+        #selectable .ui-selecting { background: #FECA40; }
+        #selectable .ui-selected { background: #F39814; color: white; }
+        #selectable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+        #selectable li { margin: 3px; padding: 0.4em; font-size: 1.4em; height: 18px; }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#selectable" ).selectable();
+        } );
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.blade.html">jQuery</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">jQueryUI</a></li>
+            <li><a href="#">Bootstrap</a></li>
+            <li><a href="#">Angular</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <h2 class="text-capitalize"><b>jQuery Function</b></h2>
+        <div class="col-sm-4">
+            <div class="left-column">
+                <div class="list-group">
+                    <a href="dragable.html" class="list-group-item"><b>Draggable()</b></a>
+                    <a href="droppable.html" class="list-group-item"><b>Droppable()</b></a>
+                    <a href="resizable.html" class="list-group-item"><b>Resizable()</b></a>
+                    <a href="resizable.html" class="list-group-item"><b>Resizable()</b></a>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-8 content">
+            <ol id="selectable">
+                <li class="ui-widget-content">Item 1</li>
+                <li class="ui-widget-content">Item 2</li>
+                <li class="ui-widget-content">Item 3</li>
+                <li class="ui-widget-content">Item 4</li>
+            </ol>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Accordion - Default functionality</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#accordion" ).accordion();
+        } );
+    </script>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.blade.html">jQuery</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">jQueryUI</a></li>
+            <li><a href="#">Bootstrap</a></li>
+            <li><a href="#">Angular</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <h2 class="text-capitalize"><b>jQuery Function</b></h2>
+        <div class="col-sm-4">
+            <div class="left-column">
+                <div class="list-group">
+                    <a href="dragable.html" class="list-group-item"><b>Draggable()</b></a>
+                    <a href="droppable.html" class="list-group-item"><b>Droppable()</b></a>
+                    <a href="resizable.html" class="list-group-item"><b>Resizable()</b></a>
+                    <a href="selectable.html" class="list-group-item"><b>Selectable()</b></a>
+                    <a href="accordion.html" class="list-group-item"><b>Arcordion()</b></a>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-8 content">
+            <div id="accordion">
+                <h3>Section 1</h3>
+                <div>
+                    <p>
+                        Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                        ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                        amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                        odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+                    </p>
+                </div>
+                <h3>Section 2</h3>
+                <div>
+                    <p>
+                        Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                        purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                        velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                        suscipit faucibus urna.
+                    </p>
+                </div>
+                <h3>Section 3</h3>
+                <div>
+                    <p>
+                        Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                        Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                        ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                        lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+                    </p>
+                    <ul>
+                        <li>List item one</li>
+                        <li>List item two</li>
+                        <li>List item three</li>
+                    </ul>
+                </div>
+                <h3>Section 4</h3>
+                <div>
+                    <p>
+                        Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                        et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                        faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                        mauris vel est.
+                    </p>
+                    <p>
+                        Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                        inceptos himenaeos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
